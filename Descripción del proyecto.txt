@@ -1,0 +1,38 @@
+Descripción e interpretación del problema del proyecto:
+
+Una empresa de seguros que elabora cotizaciones de seguro a diario para potenciales clientes requiere cambiar su 
+metodología para cotizar ya que actualmente lo realiza de forma manual lo que hace que se pierda mucho tiempo, esto
+también hace que se pierdan posibles clientes. 
+
+Dado lo anterior la empresa requiere el apoyo para la elaboración de un programa que realice las cotizaciones de forma automática en base a datos 
+proporcionados por el futuro asegurado. El monto de las cotizaciones de la empresa se calculan en base a información brindada por el cliente, los 
+datos que se le solicitan al cliente para cotizar son su edad, si tiene conyuge y si tiene hijos. 
+
+La empresa tiene un precio base para cotizar los seguros el cual es de Q2000 para el cual se suman recargos adicionales conforme a los datos brindados por
+el cliente en base a su edad, si tiene conyuge y si tiene hijos y cuántos tiene. 
+
+La empresa tiene las siguientes condiciones para los recargos en base a edad:
+-Si el asegurado tiene de 18 a 24 años, se genera un recargo de 10% sobre el precio base de Q2000. 
+-Si el asegurado tiene de 25 a 49 años, se genera un recargo de 20% sobre el precio base.
+-Si el asegurado tiene 50 años o más, se genera un recargo de 30% del precio base. 
+
+Si el asegurado tiene conyuge, también se generan recargos adicionales a los anteriores y siempre en base a la edad:
+-Si el conyuge tiene de 18 a 24 años, se genera un recargo de 10% sobre el precio base. 
+-Si el conyuge tiene de 25 a 49 años, se genera un recargo de 20% sobre el precio base.
+-Si el conyuge tiene 50 años o más, se genera un recargo de 30% del precio base. 
+
+Otro dato importante a tener en cuenta es si el asegurado tiene hijos, si tiene, también se genera un 20% de recargo por cada hijo que se requiera asegurar.
+
+Todos los recargos de la cotización son acumulables es decir que al recargo de la edad del asegurado se le suma el recargo de la edad del conyuge y el de
+la cantidad de hijos a asegurar. 
+
+Asimismo hay que tener en cuenta que existen 3 condiciones posibles que pueden darse para elaborar las cotizaciones:
+1. Si el asegurado no tiene conyuge ni hijos, en este caso el recargo es únicamente en base a la edad. 
+2. Si el asegurado tiene conyuge pero no tiene hijos, el recargo es en base a la edad del asegurado más el recargo de la edad del conyuge. 
+3. Si el asegurado no tiene conyuge pero si tiene hijos, en este caso el recargo es en base a la edad del asegurado más el recargo por cada hijo que se requiera
+asegurar. 
+
+El precio final del seguro será el precio base de Q2000 más los recargos por edad del asegurado, por la edad del conyuge y por cantidad de hijos 
+que se requieran asegurar. 
+
+Lo que se requiere es un programa que solicite al asegurado datos de edad, conyuge e hijos y calcule el precio final de la cotización de forma automática. 

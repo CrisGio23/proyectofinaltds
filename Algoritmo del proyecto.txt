@@ -1,0 +1,31 @@
+A continuación se presenta el algoritmo con los pasos para la resolución del proyecto de cotización automática para una empresa de seguros. 
+
+1. Declarar las variables a utilizar para la solución, en este caso son los recargos por edad, recargo por cantidad de hijos, el precio base de Q2000
+y el precio total.
+2. Solicitar el nombre del asegurado y guardarlo en una variable: nombre. 
+3. Solicitar la edad del asegurado y guardarla en una variable: edad. 
+4. Transformar el dato de edad ingresado por el asegurado de texto a número. 
+5. Se procede a revisar el dato ingresado de edad, si es menor de edad entonces no aplica al seguro ya que únicamente se asegura a personas mayores de edad. 
+6. Si el asegurado es mayor de edad, entonces se procede a iniciar a solicitar los datos para elaborar la cotización. 
+7. Se pregunta al asegurado si tiene conyuge. 
+8. Si la respuesta anterior es afirmativa entonces se procede a solicitar la edad de su conyuge la cual se guarda en una variable. 
+9. Se pregunta al asegurado si tiene hijos. 
+10. Si la respueta anterior es afirmativa entonces se procede a solicitar el dato de cuántos hijos tiene, este dato se guarda en una variable. 
+11. En base al dato del inciso anterior se calcula el recargo por el número de hijos a asegurar, el cual es de cantidad * 20% * Q2000.
+12. Se procede a calcular el recargo en base a la edad del asegurado. 
+13. Se revisa si el asegurado se encuentra en el rango de edad de 18 a 24 años, si es así procede a calcular el recargo el cual es de Q2000 * 10%. 
+14. Si el asegurado no se encuentra en el rango de edad anterior, entonces se procede a revisar si el asegurado tiene de 25 a 49 años, si es así procede 
+a calcular el recargo el cual es de Q2000 * 20%. 
+15. Si el asegurado no se encuentra en el rango de edad anterior, entonces se procede a revisar si el asegurado tiene 50 años o más, si es así procede 
+a calcular el recargo el cual es de Q2000 * 30%. 
+16. Se procede a calcular el recargo por el conyuge. 
+17. Se revisa si el conyuge se encuentra en el rango de edad de 18 a 24 años, si es así procede a calcular el recargo el cual es de Q2000 * 10%. 
+18. Si el conyuge no se encuentra en el rango de edad anterior, entonces se procede a revisar si el conyuge tiene de 25 a 49 años, si es así procede 
+a calcular el recargo el cual es de Q2000 * 20%. 
+19. Si el conyuge no se encuentra en el rango de edad anterior, entonces se procede a revisar si el conyuge tiene 50 años o más, si es así procede 
+a calcular el recargo el cual es de Q2000 * 30%. 
+20. Se calcula el precio total de la cotización sumando el precio base de Q2000 más todos los recargos generados por edad del asegurado, por edad del conyuge y 
+por cantidad de hijos a asegurar. 
+21. Se imprime en consola el monto total por concepto de recargos para el asegurado. 
+22. Se imprime en consola la cotización final con el precio total de Q2000 + recargos. 
+23. Sale de la aplicación.
